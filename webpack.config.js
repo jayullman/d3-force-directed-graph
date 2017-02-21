@@ -14,8 +14,12 @@ module.exports = {
       {
         test: /\.js$/, // include .js files
         exclude: /node_modules/, // exclude any and all files in the node_modules folder
-        use:{ loader: "jshint-loader", options: { esversion: 6, camelcase: true, emitErrors: false, failOnHint: false } }
-        },
+        use:
+          {
+            loader: "jshint-loader", 
+            options: { esversion: 6, camelcase: true, emitErrors: false, failOnHint: false }
+          }
+      },
       {
         use: 'babel-loader',
         test: '/\.js$/',
