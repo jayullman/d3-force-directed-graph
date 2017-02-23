@@ -18,12 +18,13 @@ module.exports = {
           {
             loader: "jshint-loader", 
             options: { esversion: 6, camelcase: true, emitErrors: false, failOnHint: false }
-          }
+          },
+        enforce: 'pre'
       },
       {
-        use: 'babel-loader',
-        test: '/\.js$/',
-        exclude: 'node_modules'
+        test: /\.js$/,
+        exclude: [/node_modules/],
+        use: 'babel-loader'
       },
 
       {
@@ -36,7 +37,7 @@ module.exports = {
       },
       { 
         test: /\.png$/, 
-        use: "url-loader?limit=100000" 
+        use: "url-loader?limit=1000" 
       },
       {
         use: ExtractTextPlugin.extract({

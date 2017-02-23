@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && webpack",
+    "build": "NODE_ENV=production npm run clean && webpack -p",
     "serve": "webpack-dev-server"
   },
   "repository": {
@@ -26,6 +26,7 @@
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.1.8",
     "babel-preset-es2015": "^6.22.0",
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "^2.0.0-rc.3",

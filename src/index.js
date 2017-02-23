@@ -13,7 +13,6 @@ let promisedData = getJson(url);
 
 promisedData
   .then((dataset) => {
-    dataset = dataset;
     drawGraph(dataset);
   })
   .catch(error => console.log(error));

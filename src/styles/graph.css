@@ -3,7 +3,23 @@
   stroke-opacity: 0.6;
 }
 
-.nodes circle {
+/*.nodes circle {
   stroke: #000;
   stroke-width: 2px;
+}*/
+
+.graph-container {
+  position: relative;
+}
+
+/*.flags-container {
+  position: absolute;
+}*/
+
+.flag {
+  position: absolute;
+}
+
+img {
+  border: 0;
 }
