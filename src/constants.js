@@ -1,0 +1,1 @@
+export const svgWidthPercent = 0.9;
